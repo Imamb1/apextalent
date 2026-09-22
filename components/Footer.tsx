@@ -8,8 +8,8 @@ export default function Footer() {
         © 2026 Apex Talent Group
       </p>
       <div className="flex gap-7">
-        {["LinkedIn", "Privacy", "Terms"].map((l) => (
-          <a key={l} href="#" className="text-[10px] tracking-[0.18em] uppercase text-paper/20 hover:text-paper/50 transition-colors">
+        {[["LinkedIn", "#"], ["Privacy", "/privacy"], ["Terms", "#"]].map(([l, href]) => (
+          <a key={l} href={href} className="text-[10px] tracking-[0.18em] uppercase text-paper/20 hover:text-paper/50 transition-colors">
             {l}
           </a>
         ))}
